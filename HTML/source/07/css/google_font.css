@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+        /* 구글폰트에서 임포트할때 모두 + 시켜야 임폴트가 정상적으로 작동하고 구글에있는 weight종류를 모두 사용가능 */
+        body{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 40px;
+            font-weight: 400;
+            color: rgba(52, 72, 189, 0.8);
+            /* rgba표기법 */
+            text-align: center;
+        }
+        /* a{
+            text-decoration: none;
+        } */
+        p{ line-height: 10px;
+        text-decoration: underline;
+        letter-spacing: 10px;
+        /* 글자하나하나의 간격 */
+        word-spacing: 100px;
+        /* 단어들의 간격 */
+    }
+        #naver_logo{
+            text-decoration: none;
+            color: #19ce60;
+            /* 16진수 컬러 표기법 */
+            font-size: 50px;
+            font-weight: 900;
+            text-shadow: 1px 4px 20px black;
+            /* 그림자가 가로로 1px 세로로 4px 움직이는  - 하게되면 반대로 움직인다 */
+            /* 20px은 번짐정도  */
+
+            /* text-transform: capitalize; */
+            text-transform: uppercase;
+            /* text-transform: lowercase; */
+            /* text-transform: none; */
+
+        }
+        ul{
+            list-style-type: none;
+        }
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+        table thead th{
+            border : 2px dotted red;
+            /* 테이블안에 tbody안에 td를 적용시키는 */
+        }
+        table tbody td{
+            border: 1px solid green;
+
+        }
+        td{
+            border:1px solid blue;
+            width:100px;
+            height: 50px;
+
+        } 
+        /* head > body th > td 선을 합치때의 순서 */
+
+        th{
+            width:1000px;
+            height: 50px;
+
+        }

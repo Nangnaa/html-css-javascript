@@ -1,0 +1,76 @@
+body{
+    text-align: center;
+}
+.box1{
+    box-sizing: border-box;
+    /* 컨텐츠부터 패딩 보더까지 다합해서 width의 값이 나오도록 출력가능 */
+    /* margin: 50px auto 70px auto;  */
+    marigin: 50px auto 70px;
+    /* 마진은 한 블록 전체 */
+    /* 하나만 입력하면 전체로 지정 두개만쓸경우에는 대칭으로 적용
+    3개 쓸경우 탑 라이트 바텀 레프트는 라이트따라 auto*/
+    padding: 10px 10px 10px 10px;
+    /* 컨텐츠에 추가적으로 붙는거라고 생각 */
+    border: 5px solid black;
+    width: 100px;
+    height: 100px;
+    background: blue;
+}
+
+.box2{
+    position: relative;
+    /* position: static; */
+    /* 흐름대로 가고 최상위의 body로 기준이 잡히고 박스4가 밖으로 나오게됨 0,0기준으로  */
+    
+    display: block;
+    /* display: inline-block; */
+    /* block인 친구를 인라인처럼 사용할수있도록 */
+    /* block은 좌우로 꽉찬 마진이 있기때문에 자동으로 줄이바뀐다. */
+    margin-left: auto ;
+    margin-right: auto ;
+    top: 100px;
+    left: 100px;
+    width: 600px;
+    height: 600px;
+    background: red;
+}
+.box3{
+    position: fixed;
+    /* fixed는 한곳에 고정이되고 다른 것보다 앞에 나오게 할수있다. */
+    right: 50px;
+    box-sizing: border-box;
+    border: 3px solid red;
+    padding: 20px;
+    /* 컨텐츠에 추가적으로 패딩을 줌으로써 박스라는 글자가 외부로 나가지않도록 */
+    margin: 0px auto;
+    width:300px;
+    height: 100px;
+    /* border-radius: 20px; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: cadetblue;
+    text-align: left;
+    
+}
+.box4{
+    
+    /* position: relative; */
+    /* position을 사용해 박스4의 위치를 지정 */
+    position: absolute;
+    /* 부모요소에 요소를 받는다 부모가 relative일경우 부모의 기준이 된다
+     */
+    /* absoulute는 내가 원하는 좌표로 움직일 수 있게해준다. */
+    top: 30px;
+    left: 50px;
+    width:100px;
+    height: 100px;
+    background: burlywood;
+
+}
+span{
+
+    /* margin-left: auto ;
+    margin-right: auto ; 인라인요소는 margin 과 border가 없어서 적용이안됨 
+    */
+
+}
