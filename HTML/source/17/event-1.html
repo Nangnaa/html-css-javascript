@@ -18,8 +18,24 @@
 
 	<script>
 		var cup = document.querySelector("#cup");  // id = cup인 요소를 가져옴
+    cup.onclick = changePic; //cup 클릭하면 chagePic함수 실행
     cup.onclick = function(){
       alert("이미지를 클릭했습니다");
+    }
+    // cup.onclick = () => {
+    //   alert("이미지를 클릭했습니다");
+    // }
+
+    function changePic(){
+      let src_text = cup.getAttribute('src');     
+      if(src_text == "image/cup-2.png"){
+        cup.setAttribute('src',"images/cup-1.png");
+        cup.src = "images/cup-1.png";
+      }else {
+        cup.setAttribute('src',"images/cup-2.png");
+        cup.src = "images/cup-2.png";
+        
+      }
     }
 	</script>
 </body>
