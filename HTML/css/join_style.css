@@ -33,6 +33,23 @@ header h1 a span {
     width: 460px;
     margin: 0px auto;
 }
+
+/* warning check */
+.text_required{
+    display: none;
+    /* none을주게되면 밑의 이미존재하는아이디입니다가뜨게됨 */
+    color: red;
+    font-size: 0.8em;
+
+}
+
+.idCheck_false{
+    display: none;
+    color: red;
+    font-size: 0.8em;
+
+}
+
 .join_row{
     margin: 10px 0px;
 }
@@ -151,3 +168,4 @@ address a:hover{
     text-decoration: underline;
     color: darkolivegreen;
 }
+
